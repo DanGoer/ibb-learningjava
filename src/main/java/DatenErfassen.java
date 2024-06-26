@@ -1,3 +1,10 @@
+// Erstellen Sie ein Programm "DatenErfassen" mit folgendem Ablauf:
+// Es erfolgt zuerst eine Abfrage, wieviele Daten erfasst werden sollen.
+// Es wird ein entsprechend großes String-Array erzeugt.
+// Nun werden alle Daten abgefragt und im Array gespeichert.
+// Abschließend werden alle Daten des Arrays ausgegeben.
+
+
 import java.util.Scanner;
 
 public class DatenErfassen {

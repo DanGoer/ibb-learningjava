@@ -1,3 +1,7 @@
+// Erstellen Sie ein Programm "Daten" mit folgendem Ablauf:
+// Erzeugen Sie ein Array mit 10 ganzzahligen Elementen.
+// Geben Sie alle Elemente des Arrays auf dem Bildschirm aus.
+
 public class Daten {
     public static void main(String[] args) {
         
