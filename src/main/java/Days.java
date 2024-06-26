@@ -5,9 +5,9 @@ public class Days {
 
     public static void main(String[] args) {
         // Zum herausfinden des aktuellen Jahres
-        int entsprechendesJahr = LocalDate.now().getYear();
+        //int entsprechendesJahr = LocalDate.now().getYear();
         // Zum herausfinden des vorherigen Jahres (Kommentar entfernen)
-        // int entsprechendesJahr = LocalDate.now().getYear() - 1;
+         int entsprechendesJahr = LocalDate.now().getYear() - 1;
 
         // Durchläuft jeden Monat des aktuellen Jahres
         for (int monat = 1; monat <= 12; monat++) {
