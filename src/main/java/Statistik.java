@@ -21,14 +21,20 @@ public class Statistik {
         double[] datenArray = new double[anzahlDaten];
         
         // Abfrage + Speichern der Daten
-        for (int i = 0; i < ){
-        
+        for (int i = 0; i < anzahlDaten; i++) {
+            System.out.print("Geben Sie Daten " + (i + 1) + " ein: ");
+            datenArray[i] = scanner.nextDouble();
         }
         
         // Berechnungen
+        double summe = 0.0;
+        for (int i = 0; i < datenArray.length; i++) {
+            summe += datenArray[i];
+        }
+        double mittelwert = summe / anzahlDaten;
         
         // Ausgabe der Ergebnisse
-        System.out.print("Es wurden  ( ) Daten erfasst, die Summe = 37,273 und der Mittelwert = 4,659125");
+        System.out.print("Es wurden  " + anzahlDaten + " Daten erfasst, die Summe = " + summe + " und der Mittelwert =" + mittelwert );
         
     }
     
