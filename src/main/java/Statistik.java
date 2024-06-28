@@ -34,7 +34,7 @@ public class Statistik {
         double mittelwert = summe / anzahlDaten;
         
         // Ausgabe der Ergebnisse
-        System.out.print("Es wurden  " + anzahlDaten + " Daten erfasst, die Summe = " + summe + " und der Mittelwert =" + mittelwert );
+        System.out.print("Es wurden" + anzahlDaten + " Daten erfasst, die Summe ist = " + summe + " und der Mittelwert =" + mittelwert );
         
     }
     
