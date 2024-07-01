@@ -29,7 +29,6 @@ public class MinimumFinder {
         // Aufruf der Methode, um das Minimum zu finden
         int minimum = findMinimum(num1, num2, num3);
 
-        // Ausgabe des Ergebnisses
         System.out.println("Das Minimum von " + num1 + ", " + num2 + " und " + num3 + " ist: " + minimum);
     }
 }
