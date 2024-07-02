@@ -7,27 +7,41 @@
 // Volumen einer Kugel: 4 / 3*Π*R3
 
 public class KugelBerechnung {
+    
     // Methode zur Berechnung des Umfangs, der Mantelfläche und des Volumens einer Kugel
     public static void berechneKugelWerte(double radius, double[] ergebnisse) {
-// Pi
+    // Pi
     double pi = 3.14;
 
 
     
-// Umfang
+    // Umfang
+    double umfang = pi * radius;
     
-// Mantefläche
+    // Mantefläche
+    double mantelfläche = 4 * Math.pow(radius,2) * pi;
     
-// Volumen
+    // Volumen
+    double volumen = (4/3) * pi * Math.pow(radius,3);
+    
+    // Ergebnisse an den jeweiligen stellen im Array speichern
+    ergebnisse[0] = umfang;
+    ergebnisse[1] = mantelfläche;
+    ergebnisse[2] = volumen;
 
  }
 
 
 
 public static void main(String[] args) {
-double radius = 6.0; // Hier kann der radius verändert werden
-double[] ergebnisse = new double[3]; // Hier wird das Array erstellt zum speichern der berechneten Werte
+    double radius = 6.0; // Hier kann der radius verändert werden
+    double[] ergebnisse = new double[3]; // Hier wird das Array erstellt zum speichern der berechneten Werte
+    // Hier wird die Methode zur Berechnung der Kugel von vorher aufgerufen
+    berechneKugelWerte(radius, ergebnisse);
 
-berechneKugelWerte(radius, ergebnisse);
+    // Ausgabe der Ergebnisse
+    System.out.println("Umfang: " + ergebnisse[0]);
+    System.out.println("MantelFläche: " + ergebnisse[1]);
+    System.out.println("Volumen: " + ergebnisse[2]);
 }
 }
